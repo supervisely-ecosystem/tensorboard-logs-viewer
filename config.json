@@ -1,13 +1,14 @@
 {
-    "name": "Application Name",
+    "release": { "version":"v0.0.1", "name":"init" },
+    "slug": "grokhi/tensorboard-logs-viewer",
+    "name": "Tensorboard logs viewer",
     "type": "app",
     "version": "2.0.0",
     "categories": [
-      ""
+      "development"
     ],
     "description": "application description",
-    "docker_image": "supervisely/base-py-sdk:latest",
-    "entrypoint": "python -m uvicorn src.main:g.app --host 0.0.0.0 --port 8000",
+    "entrypoint": "sh run.sh",
     "port": 8000,
     "task_location": "workspace_tasks",
     "icon_background": "#FFFFFF",
@@ -15,9 +16,14 @@
     "icon": "https://imgur.com/a9u0M3Y.png",
     "icon_cover": true,
 
-    "instance_version": "6.4.45",
+    "min_agent_version": "6.7.2",
+    "min_instance_version": "6.5.46",
 
     "context_menu": {
-        "target": ["images_project"]
+        "target": 
+        [
+          "files_file",
+          "files_folder"
+        ]
     }
 }

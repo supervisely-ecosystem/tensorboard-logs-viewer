@@ -1,1 +1,2 @@
-supervisely[apps]
+supervisely
+tensorboard

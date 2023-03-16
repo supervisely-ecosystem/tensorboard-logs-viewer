@@ -1,11 +1,23 @@
-from fastapi import Request, Depends
+import os, json, re
 
-import src.sly_globals as g
+import supervisely as sly
+from dotenv import load_dotenv
 
-import src.example_card
+
+def strip_with_replacement(text, replacement):
+    return re.sub(r'\s+', replacement, text)
+
+if sly.is_development():
+    load_dotenv("local.env")
+    load_dotenv(os.path.expanduser("~/supervisely.env"))
 
 
-@g.app.get("/")
-def read_index(request: Request):
-    return g.templates_env.TemplateResponse('index.html', {'request': request})
+api: sly.Api = sly.Api.from_env()
+
+
+folder = sly.env.folder()
+env_file = sly.env.file()
+
+
+
 
