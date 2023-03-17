@@ -20,15 +20,21 @@
 # nohup tensorboard &> output & sleep 5 &
 # python script.py &
 
-echo ${pwd}
+echo "$(pwd)"
+echo "$(ls)"
 
-echo $CONTEXT_SLYFOLDER
-echo $CONTEXT_SLYFILE
-echo $FILE
-echo $FOLDER
-echo $SLYFOLDER
-echo $SLYFILE
-# tensorboard --logdir src/artefacts --port 8000  --host 0.0.0.0 --reload_multifile=true --load_fast=false --path_prefix=$BASE_URL #&> output & sleep 5 && \
+# echo $CONTEXT_SLYFOLDER
+# echo $CONTEXT_SLYFILE
+# echo $FILE
+# echo $FOLDER
+# echo $SLYFOLDER
+# echo $SLYFILE
+
+python3 ./src/main.py && \
+DEFAULT_PATH=`cat default_path.txt` && \
+echo "Default notebook url: " $DEFAULT_PATH && \
+
+tensorboard --logdir $DEFAULT_PATH --port 8000  --host 0.0.0.0 --reload_multifile=true --load_fast=false --path_prefix=$BASE_URL #&> output & sleep 5 && \
 
 # python3 src/customers_main.py src/download/ds1/img src/artefacts/ && \
 
