@@ -30,11 +30,11 @@ echo "$(ls)"
 # echo $SLYFOLDER
 # echo $SLYFILE
 
-python3 ./src/main.py && \
-DEFAULT_PATH=`cat default_path.txt` && \
-echo "Default notebook url: " $DEFAULT_PATH && \
+python3 src/main.py && \
+LOGDIR_PATH=`cat logdir_path.txt` && \
+echo "Logs directory url: " $LOGDIR_PATH && \
 
-tensorboard --logdir $DEFAULT_PATH --port 8000  --host 0.0.0.0 --reload_multifile=true --load_fast=false --path_prefix=$BASE_URL #&> output & sleep 5 && \
+tensorboard --logdir $LOGDIR_PATH --port 8000  --host 0.0.0.0 --reload_multifile=true --load_fast=false --path_prefix=$BASE_URL 
 
 # python3 src/customers_main.py src/download/ds1/img src/artefacts/ && \
 

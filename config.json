@@ -1,11 +1,11 @@
 {
-    "release": { "version":"v0.0.11", "name":"init" },
+    "release": { "version":"v0.0.12", "name":"init" },
     "slug": "grokhi/tensorboard-logs-viewer",
     "name": "Tensorboard logs viewer",
     "type": "app",
     "version": "2.0.0",
     "categories": ["development"],
-    "description": "application description",
+    "description": "Open tensorboard logs in teamfiles",
     "icon_background": "#FFFFFF",
     "icon": "https://imgur.com/a9u0M3Y.png",
     "icon_cover": true,
