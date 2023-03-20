@@ -24,11 +24,11 @@ if not input_file is None:
 
     if ext != '.tfevents':
         sly.logger.warn(
-            f"{os.path.basename(input_file)} is not a file with appropriate Tensorboard logs extension. Searching for files containing '.tfevents' in the parent folder instead: '{input_folder}'"
+            f"File {os.path.basename(input_file)} is not a file with appropriate Tensorboard logs extension. Searching for files containing '.tfevents' in the parent folder instead: '{input_folder}'"
         )
     else:
         sly.logger.warn(
-            f"{os.path.basename(input_file)} has an appropriate Tensorboard log extension. Searching for files containing '.tfevents' in the parent folder: {input_folder}"
+            f"File {os.path.basename(input_file)} has an appropriate Tensorboard log extension. Searching for files containing '.tfevents' in the parent folder: '{input_folder}'"
         )
 
     api = sly.Api()
