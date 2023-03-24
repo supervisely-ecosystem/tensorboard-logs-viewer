@@ -21,10 +21,11 @@
 </div>
 
 # Overview
-
-# Usage
-
+This is a simple tensorboard logs viewer app. You can look at your tensorboard log files. 
 
 # How to run
-
+- Choose your folder in `Team Files` containing tensorboard logs or the file itself
+- Right-click on the object and click on three-dot menu. Then, choose `Run App -> Tensorboard Logs Viewer`. Click `Run`.
+- After running, the tensorboard server will be available with `Open` button in workspace. Click on it.
+- That's it! Now you can view your tensorboard logs.
 
