@@ -2,17 +2,27 @@
   "type": "app",
   "version": "2.0.0",
   "name": "Tensorboard",
-  "description": "Open tensorboard ",
-  "categories": ["development"],
+  "description": "Open metrics in tensorboard",
+  "categories": [
+    "neural network",
+    "images",
+    "object detection",
+    "semantic segmentation",
+    "instance segmentation",
+    "classification",
+    "nn tools",
+    "data operations"
+  ],
   "icon_background": "#FFFFFF",
   "icon": "https://user-images.githubusercontent.com/12828725/228048263-86c7b950-35cc-4f19-9fb9-51f526652898.png",
   "icon_cover": true,
+
+  "docker_image": "supervisely/tensorboard:1.0.0",
   "entrypoint": "sh run.sh",
   "port": 8000,
   "proxyKeepUrl": true,
 
   "integrated_into": ["standalone"],
-  "store_data_on_agent": true,
   "community_agent": false,
 
   "context_menu": {
