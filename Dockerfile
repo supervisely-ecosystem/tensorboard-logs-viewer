@@ -1,4 +1,4 @@
-FROM tensorboard/tensorboard:2.12.0
+FROM tensorflow/tensorflow:2.12.0
 
 RUN pip install supervisely==6.70.13
 
