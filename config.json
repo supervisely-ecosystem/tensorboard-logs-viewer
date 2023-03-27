@@ -16,7 +16,7 @@
   "icon_background": "#FFFFFF",
   "icon": "https://user-images.githubusercontent.com/12828725/228048263-86c7b950-35cc-4f19-9fb9-51f526652898.png",
 
-  "docker_image": "supervisely/tensorboard:1.0.0",
+  "docker_image": "supervisely/tensorboard:1.0.1",
   "entrypoint": "sh run.sh",
   "port": 8000,
   "proxyKeepUrl": true,
