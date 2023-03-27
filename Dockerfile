@@ -1,6 +1,5 @@
-FROM tensorflow/tensorflow
+FROM tensorboard/tensorboard:2.12.0
 
-USER root
 
 WORKDIR /sly-app-data
 

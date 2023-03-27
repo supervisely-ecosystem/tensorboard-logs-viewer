@@ -1,2 +1,2 @@
-supervisely
-tensorboard
+supervisely==6.70.13
+tensorboard==2.12.0

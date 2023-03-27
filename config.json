@@ -1,27 +1,21 @@
 {
-    "release": { "version":"v0.0.14", "name":"init" },
-    "slug": "grokhi/tensorboard-logs-viewer",
-    "name": "Tensorboard logs viewer",
-    "type": "app",
-    "version": "2.0.0",
-    "categories": ["development"],
-    "description": "Open tensorboard logs in teamfiles",
-    "icon_background": "#FFFFFF",
-    "icon": "https://imgur.com/a9u0M3Y.png",
-    "icon_cover": true,
-    "entrypoint": "sh run.sh",
-    "port": 8000,
-    "proxyKeepUrl": true,
+  "type": "app",
+  "version": "2.0.0",
+  "name": "Tensorboard",
+  "description": "Open tensorboard ",
+  "categories": ["development"],
+  "icon_background": "#FFFFFF",
+  "icon": "https://user-images.githubusercontent.com/12828725/228048263-86c7b950-35cc-4f19-9fb9-51f526652898.png",
+  "icon_cover": true,
+  "entrypoint": "sh run.sh",
+  "port": 8000,
+  "proxyKeepUrl": true,
 
-    "integrated_into": ["standalone"],
-    "store_data_on_agent": true,
-    "community_agent": false,
+  "integrated_into": ["standalone"],
+  "store_data_on_agent": true,
+  "community_agent": false,
 
-    "context_menu": {
-        "target": 
-        [
-          "files_file",
-          "files_folder"
-        ]
-    }
+  "context_menu": {
+    "target": ["files_file", "files_folder"]
+  }
 }
