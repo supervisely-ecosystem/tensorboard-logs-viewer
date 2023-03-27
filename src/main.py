@@ -20,14 +20,22 @@ if not input_file is None:
     sly.logger.info(f"App is started from file context menu in TeamFiles: {input_file}")
 
     input_folder = os.path.dirname(input_file)
-    ext = '.' + os.path.basename(input_file).split('.')[2]
+    try:
+        ext = '.' + os.path.basename(input_file).split('.')[2]
+    except:
+        try:
+            ext = os.path.splitext(input_file)[1]
+        except:
+            sly.logger.error(
+                f"File '{input_file}' do not have an extension"
+            )
 
     if ext != '.tfevents':
         sly.logger.warn(
             f"File {os.path.basename(input_file)} is not a file with appropriate Tensorboard logs extension. Searching for files containing '.tfevents' in the parent folder instead: '{input_folder}'"
         )
     else:
-        sly.logger.warn(
+        sly.logger.info(
             f"File {os.path.basename(input_file)} has an appropriate Tensorboard log extension. Searching for files containing '.tfevents' in the parent folder: '{input_folder}'"
         )
 

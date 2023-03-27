@@ -1,5 +1,5 @@
 {
-    "release": { "version":"v0.0.13", "name":"init" },
+    "release": { "version":"v0.0.14", "name":"init" },
     "slug": "grokhi/tensorboard-logs-viewer",
     "name": "Tensorboard logs viewer",
     "type": "app",
