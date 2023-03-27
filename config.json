@@ -15,6 +15,7 @@
   ],
   "icon_background": "#FFFFFF",
   "icon": "https://user-images.githubusercontent.com/12828725/228048263-86c7b950-35cc-4f19-9fb9-51f526652898.png",
+  "poster": "https://user-images.githubusercontent.com/12828725/228066402-5aa2ff79-c6ec-4983-8d66-2f7ef08584b6.jpg",
 
   "docker_image": "supervisely/tensorboard:1.0.1",
   "entrypoint": "sh run.sh",
