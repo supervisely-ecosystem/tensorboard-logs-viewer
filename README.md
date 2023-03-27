@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="#Overview">Overview</a> •
-  <a href="#How-To-Use">How To Use</a> 
+  <a href="#How-To-Use">How To Use</a> • 
   <a href="#Acknowledgment">Acknowledgment</a>
 </p>
 
