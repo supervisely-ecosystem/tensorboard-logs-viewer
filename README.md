@@ -1,31 +1,36 @@
 <div align="center" markdown>
+<img src="https://user-images.githubusercontent.com/12828725/228066998-7bd39e8a-562e-431e-a1b7-5940007f0ae7.jpg">
 
-<img src="" style="width: 100%;"/>
-
-# Application Readme
+# View metrics in Tensorboard
 
 <p align="center">
   <a href="#Overview">Overview</a> •
-  <a href="#Usage">Usage</a> •
-  <a href="#how-to-run">How to run</a>
+  <a href="#How-To-Use">How To Use</a> 
+  <a href="#Acknowledgment">Acknowledgment</a>
 </p>
 
-
-[![](https://img.shields.io/badge/supervisely-ecosystem-brightgreen)](https://ecosystem.supervise.ly/apps/supervisely-ecosystem/dev-smart-tool-batched)
+[![](https://img.shields.io/badge/supervisely-ecosystem-brightgreen)](https://ecosystem.supervise.ly)
 [![](https://img.shields.io/badge/slack-chat-green.svg?logo=slack)](https://supervise.ly/slack)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/supervisely-ecosystem/dev-smart-tool-batched)
-[![views](https://app.supervise.ly/public/api/v3/ecosystem.counters?repo=supervisely-ecosystem/dev-smart-tool-batched&counter=views&label=views)](https://supervise.ly)
-[![used by teams](https://app.supervise.ly/public/api/v3/ecosystem.counters?repo=supervisely-ecosystem/dev-smart-tool-batched&counter=downloads&label=used%20by%20teams)](https://supervise.ly)
-[![runs](https://app.supervise.ly/public/api/v3/ecosystem.counters?repo=supervisely-ecosystem/dev-smart-tool-batched&counter=runs&label=runs&123)](https://supervise.ly)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/supervisely-ecosystem/tensorboard-logs-viewer)
+[![views](https://app.supervise.ly/img/badges/views/supervisely-ecosystem/tensorboard-logs-viewer.png)](https://supervise.ly)
+[![runs](https://app.supervise.ly/img/badges/runs/supervisely-ecosystem/tensorboard-logs-viewer.png)](https://supervise.ly)
 
 </div>
 
-# Overview
-This is a simple tensorboard logs viewer app. You can look at your tensorboard log files. 
+## Overview
 
-# How to run
-- Choose your folder in `Team Files` containing tensorboard logs or the file itself
-- Right-click on the object and click on three-dot menu. Then, choose `Run App -> Tensorboard Logs Viewer`. Click `Run`.
-- After running, the tensorboard server will be available with `Open` button in workspace. Click on it.
-- That's it! Now you can view your tensorboard logs.
+Run Tensorboard from the context menu of file (`*.tfevents.*`) or directory in Team Files.
 
+# How To Use 
+
+1. Run app from the context menu of directory of file in **Team Files** -> `Run app` -> `Tensorboard`
+
+2. Wait for the app to import your data (project will be created in the current workspace)
+
+3. Stop app manually once you finish with it.
+
+# Acknowledgment
+
+This app is based on the great repository [Tensorboard] (https://github.com/tensorflow/tensorboard) by tensorflow team .
+
+This app is based on the great work `Tensorboard` ([github](https://github.com/tensorflow/tensorboard)). ![GitHub Org's stars](https://img.shields.io/github/stars/tensorflow/tensorboard?style=social)
