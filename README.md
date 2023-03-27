@@ -21,6 +21,7 @@
 
 Run Tensorboard from the context menu of file (`*.tfevents.*`) or directory in Team Files.
 
+
 # How To Use 
 
 1. Run app from the context menu of directory of file in **Team Files** -> `Run app` -> `Tensorboard`
@@ -28,6 +29,8 @@ Run Tensorboard from the context menu of file (`*.tfevents.*`) or directory in T
 2. Wait for the app to import your data (project will be created in the current workspace)
 
 3. Stop app manually once you finish with it.
+
+<img src="https://user-images.githubusercontent.com/12828725/228075685-2946d65c-bba9-4a7e-90f7-66ee1cf5f77e.gif">
 
 # Acknowledgment
 
