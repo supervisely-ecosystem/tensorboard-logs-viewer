@@ -34,6 +34,4 @@ Run Tensorboard from the context menu of file (`*.tfevents.*`) or directory in T
 
 # Acknowledgment
 
-This app is based on the great repository [Tensorboard] (https://github.com/tensorflow/tensorboard) by tensorflow team .
-
-This app is based on the great work `Tensorboard` ([github](https://github.com/tensorflow/tensorboard)). ![GitHub Org's stars](https://img.shields.io/github/stars/tensorflow/tensorboard?style=social)
+This app is based on the great repository [Tensorboard] (https://github.com/tensorflow/tensorboard) ![GitHub Org's stars](https://img.shields.io/github/stars/tensorflow/tensorboard?style=social) by tensorflow team .
