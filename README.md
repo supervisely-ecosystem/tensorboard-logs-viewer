@@ -29,9 +29,13 @@ Run Tensorboard from the context menu of file (`*.tfevents.*`) or directory in T
 
 3. Stop app manually once you finish with it.
 
+Here is an example how you could open a single `*.tfevents.*` file.
+
 ![Open a single file in Team files](https://user-images.githubusercontent.com/12828725/228075685-2946d65c-bba9-4a7e-90f7-66ee1cf5f77e.gif)
 
-![Open a directory with "*.tfevents.*" files in Team files](https://user-images.githubusercontent.com/78355358/235899966-797e0c9f-d801-4fbc-a076-2af61c58aaea.gif)
+Here is an example how you could open a folder with multiple `*.tfevents.*` files.
+
+![Open a directory with "*.tfevents.*" files in Team files](https://user-images.githubusercontent.com/78355358/236174364-af95b686-e355-4fd1-92c9-69331f72893d.gif)
 
 # Acknowledgment
 
